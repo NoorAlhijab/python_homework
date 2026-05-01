@@ -50,7 +50,7 @@ employee_shape = more_employees.shape
 #print(employee_shape)
 
 ## 4- Use the info() method:
-#more_employees.info()
+more_employees.info()
 
 
 # Task 4
@@ -70,7 +70,7 @@ clean_data['Age'] = pd.to_numeric(clean_data['Age'], errors='coerce')
 #print(clean_data['Age'])
 
 ## 4- Convert Salary to numeric and replace known placeholders (unknown, n/a) with NaN:
-clean_data['Salary'] = clean_data['Salary'].replace(['unknown', 'n/a'], pd.NA)
+clean_data['Salary'] = clean_data['Salary'].str.strip().replace(['unknown', 'n/a'], pd.NA)
 clean_data['Salary'] = pd.to_numeric(clean_data['Salary'], errors='coerce')
 #print(clean_data['Salary'])
 
