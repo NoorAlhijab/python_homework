@@ -1,0 +1,4 @@
+The last task (Task 6) was a bit tricky at first and took some time to get the correct links.
+I was able to find the required data by investigating the page using browser developer tools 
+and inspecting the HTML structure. Since I have previous experience with HTML 
+and debugging web pages, it helped me to figure it out and complete the required steps.
