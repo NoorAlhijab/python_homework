@@ -1,0 +1,33 @@
+# Task 5
+1. Which sections of the website are restricted for crawling?
+A) 
+Disallow: /w/
+Disallow: /api/
+Disallow: /trap/
+Disallow: /wiki/Special:
+Disallow: /wiki/Spezial:
+Disallow: /wiki/Spesial:
+Disallow: /wiki/Special%3A
+Disallow: /wiki/Spezial%3A
+Disallow: /wiki/Spesial%3A
+
+2. Are there specific rules for certain user agents?
+A) 
+Yes, some agents Disallow from all pages(Disallow: /), and there are some no disallow(allowed) 
+(Disallow:) is empty.
+list of agents disallow include, Mediapartners-Google, UbiCrawler, DOC, Zao, Zealbot, 
+list of agents there are no disallow(allowed) like, IsraBot, Orthogaffe
+
+Also there are some coditions and rules for crawling delay between hits,
+set the Crawl-delay to 5
+like SemrushBot agent.
+
+3. Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose 
+and how it promotes ethical scraping. 
+Put these in ethical_scraping.txt in your python_homework directory.
+A) 
+Website uses robots.txt to set rules for web scraping 
+by defining which sections are disallowed or allowed for crawling. 
+It also helps prevent too many requests that could overload the website’s servers. 
+robots.txt provides a clear structure for web crawlers to indicate which parts of the website 
+they are allowed or not allowed to access.
